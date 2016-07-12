@@ -1,0 +1,57 @@
+& {
+    #platui > #media;
+    #platui > #mixins;
+    #platui > #variables;
+
+    [plat-control="navbar"] {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        width: 100%;
+        height: @navbar-height;
+        background-color: @navbar-bg;
+        
+        .anchor-right {
+            position: absolute;
+            top: 0;
+            right: 0;
+            height: @navbar-height;
+        }
+        
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            
+            
+            li {
+                display: inline-block;
+                margin: 0;
+                padding: 0 1em;
+                height: @navbar-height;
+                line-height: @navbar-height;
+                vertical-align: middle;
+                
+            }
+                a {
+                    color: #636977;
+
+                }
+
+
+        }
+        .hamburger {
+            height: @navbar-height;
+            line-height: @navbar-height;
+            vertical-align: middle;
+            padding-right: 1em;
+        }
+
+        .logo {
+            height: 3em;
+            width: auto;
+        }
+
+    }
+}

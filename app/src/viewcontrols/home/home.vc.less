@@ -1,0 +1,148 @@
+& {
+    #platui > #media;
+    #platui > #mixins;
+    #platui > #variables;
+
+    [plat-control="home-vc"] {
+        /*  */
+        body 
+            {
+            font-family: 'Montserrat', sans-serif;
+            background-color: #ffffff;
+            }
+
+        .drawer {
+            position: right;
+
+        }
+
+        /* settings for stuff in header and footer row  */
+        .header .row,
+        .footer .row 
+            {
+            font-color: #636977;
+            display: flex;
+            align-items: center;
+            }
+
+
+        /* centers text and images within their container area */
+        // .footer .container
+        // {
+        //     text-align: center;
+        //     align-items: center;
+            
+        // }
+
+        .stuff {
+            text-align: center;
+            align-items: center;
+        }
+
+        /*  */
+        .header .row
+            {
+                align: center;
+            }
+
+
+        /*  */
+        .jumbotron 
+            {
+            display: flex;
+            align-items: center;
+            background-size: cover;
+            background-color: #0a8e84;
+        }
+
+        /*  it sets margins for text and images within jumbotron */
+        .jumbotron .container
+        {
+            margin: 1em 1em 1em 7em;
+        }
+
+
+        /* maybe play with em, weight, margin */
+        .jumbotron h2 
+        {
+            font-size: 2em;
+            font-weight: 700;
+            color: #fff;
+        }
+
+        /* sets stuff for paragraphs in jumbotron */
+        .jumbotron p 
+            {
+            font-size: 1.25em;
+            font-weight: 400;
+            color: #fff;
+            }
+
+        /* doesn't seem to be changing image size */
+        .jumbotron img
+        {
+            size: 5em;
+        }
+
+
+        /* creates margin around images, may need to still adjust some */
+        section .row img
+            {
+            margin: 0 0 .5rem 0;
+            width: 100%;
+            }
+
+
+
+        /* puts padding area around tlap logo in the header*/
+        .header 
+        {
+            padding: .1rem 0;
+        }
+
+        /* may need to edit, not sure */
+        .header .nav
+        {
+            display: flex;
+            justify-content: flex-end;
+        }
+
+
+        /* puts space between the different p's in the header */
+        .header p
+        {
+            font-size: 1.15em;
+            font-weight: 700;
+            padding: 0 3em;
+            margin: 0;
+        }
+
+
+        /* for all buttons, not within the jumbotron */
+        .btn 
+        {
+            border-radius: 3px;
+            border: 2px solid #636977;
+            color: #636977;
+            text-shadow: none;
+            background-color: #ffffff;
+            text-align: center;
+            align-items: center;
+            
+        }
+
+
+        /* for button within the jumbotron  */
+        .jbtn
+        {
+            border-radius: 3px;
+            border:2px solid #fff;
+            color: #fff;
+            background-color: #0a8e84;
+        }
+
+
+
+
+    }
+}

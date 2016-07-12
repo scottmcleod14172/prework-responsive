@@ -1,0 +1,29 @@
+* {
+    box-sizing: border-box;
+}
+
+
+.error-message {
+    color: red;
+    text-decoration: underline;
+}
+
+.app {
+    height: 100%;
+    position: relative;
+    overflow-y: hidden;
+    padding-top: @navbar-height;
+
+    .content {
+        height: 100%;
+        width: 100%;
+        
+        #platui > #mixins > .scroll(Y);
+        background-color: white;
+        
+        & > [plat-control="plat-viewport"] {
+            height: auto;
+            min-height: 720px;
+        }
+    }
+}
